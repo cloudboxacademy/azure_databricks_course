@@ -22,14 +22,15 @@ Both of these solutions are tested by me and a few others and they can be used t
 By default, Azure creates an external user for every subscription, that you can use to access the databricks account console. 
 Please follow the steps below to find the user and login to databricks account console. 
 
+
 1. Navigate to the Microsoft Entra ID as below
 
-<img width="1909" alt="Navigate to Microsoft EntraID" src="https://github.com/user-attachments/assets/2bfbfad2-a55e-4025-a800-1fc80bdc638b">
-
+<img width="1909" alt="Navigate to Microsoft EntraID" src="https://github.com/user-attachments/assets/2bfbfad2-a55e-4025-a800-1fc80bdc638b">  
+  
 2. Navigate to Users
 
-<img width="1911" alt="2  Navigate to Users" src="https://github.com/user-attachments/assets/f98a374e-333e-4f4e-a964-7ed8d4b73dc7">
-
+<img width="1911" alt="2  Navigate to Users" src="https://github.com/user-attachments/assets/f98a374e-333e-4f4e-a964-7ed8d4b73dc7">  
+ 
 3. Copy the name of the external user created by Azure [It will have #EXT# in the name]
 
 <img width="1914" alt="3  Copy User Name" src="https://github.com/user-attachments/assets/eb9af50a-d6f3-42c5-b864-2c14635a2929">
@@ -45,11 +46,11 @@ Please follow the steps below to find the user and login to databricks account c
 6. Use the external user to login to Azure Databricks Account console via https://accounts.azuredatabricks.net/
    
 <img width="800" alt="6  Signin to account console" src="https://github.com/user-attachments/assets/57c252e2-cec7-476f-9cbf-a000b40db77d">
-
+   
 You should be able to successfully login to the account console as below
 
 <img width="963" alt="6 2 Successful Login " src="https://github.com/user-attachments/assets/d20ac39e-661e-46c8-9f0f-234c8df73856">
-
+  
 The external user created by Microsoft Azure already has the privileages Global Administrator and Databricks Account Admin. So, you do not have to add any additional privileages
 
 
