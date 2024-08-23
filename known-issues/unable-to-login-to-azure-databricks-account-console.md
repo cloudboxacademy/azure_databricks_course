@@ -92,11 +92,11 @@ Please follow the steps below to implement this solution
 
 # Related Content
 
-Databricks Community Forum - https://community.databricks.com/t5/administration-architecture/unable-to-login-to-azure-databricks-account-console/td-p/82190
+[Databricks Community Forum](https://community.databricks.com/t5/administration-architecture/unable-to-login-to-azure-databricks-account-console/td-p/82190)
 
-Microsft Q&A Forum - https://learn.microsoft.com/en-us/answers/questions/1861727/unable-to-login-to-azure-databricks-account-consol
+[Microsft Q&A Forum](https://learn.microsoft.com/en-us/answers/questions/1861727/unable-to-login-to-azure-databricks-account-consol)
 
-Stack Overflow Question - https://stackoverflow.com/questions/78843411/unable-to-login-to-azure-databricks-account-console/78893694#78893694
+[Stack Overflow Question](https://stackoverflow.com/questions/78843411/unable-to-login-to-azure-databricks-account-console/78893694#78893694)
 
 
 
