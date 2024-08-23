@@ -1,8 +1,8 @@
 # Unable to login to Azure Databricks Account Console - Solution
-Due to recent changes to Microsoft Azure (July 2024 onwards), users with personal subscription are unable to access Azure Databricks Account console with their standard user id they use to signin to Azure Portal (e.g. training@outlook.com). This article documents the solution/ workaround received from Microsoft via Microsoft Q&A forum as well as from Dustin Vannoy via the Databricks Community forum. Please see links to those forums at the bottom of this page. 
+Due to recent changes to Microsoft Azure (July 2024 onwards), users with personal subscription are unable to access Azure Databricks Account console with their standard user id that they use to signin to Azure Portal (e.g. training@outlook.com). This article documents the solution/ workaround received from both Microsoft via Microsoft Q&A forum as well as from Dustin Vannoy via the Databricks Community forum. Please see links to those forums at the bottom of this page. 
 
 ## Overview of the Issue
-Microsoft Azure users may see the following error message, if they try to access the account console via the URL https://accounts.azuredatabricks.net/
+Microsoft Azure users with a personal subscription may see the following error message, if they try to access the account console via the URL https://accounts.azuredatabricks.net/
 
 <img width="648" alt="unable-to-access-account-console-error-2" src="https://github.com/user-attachments/assets/f5b338a9-5564-494a-b64f-1e96a8e803d3">
 
@@ -10,10 +10,12 @@ Also, the users may see the following error message, if they try to access the a
 
 <img width="405" alt="unable-to-access-account-console-error-1" src="https://github.com/user-attachments/assets/36592ef0-7743-4d95-9ae3-503d5212e122">
 
-Both of these errors are seen by users with personal subscription trying to access the databricks account console via their standard azure account. The proposed solution is to use an external account to access the account console instead. There are 2 solutions to this issue as below
+Both of these errors are seen by users with personal subscription trying to access the databricks account console via their standard azure account. The proposed solution is to use an external azure account to access the databricks account console instead. There are 2 solutions to this issue as below
 
-1. Use the external user created by Azure to access the databricks account console [Suggested by Microsoft via Microsoft Q&A forum]
-2. Create a new external user and use that to access the databricks account console [Suggested by Dustin Vannoy via Databricks Community forum]
+1. Use the external user created by Azure to access the databricks account console [Suggested by Dustin Vannoy via Databricks Community forum]
+2. Create a new external user and use that to access the databricks account console [Suggested by Microsoft via Microsoft Q&A forum]
+
+Both of these solutions are tested by me and a few others and they can be used to workaround this limitation. 
 
 ### Solution 1 - Use the external user created by Azure to access the databricks account console
 
@@ -32,15 +34,15 @@ Please follow the steps below to find the user and login to databricks account c
 
 <img width="1914" alt="3  Copy User Name" src="https://github.com/user-attachments/assets/eb9af50a-d6f3-42c5-b864-2c14635a2929">
 
-4. Sign out from Azure Portal and Sign in user the External User
+4. Sign out from Azure Portal and Sign in using this External User
 
 <img width="550" alt="4  Signin as External User" src="https://github.com/user-attachments/assets/f1294850-60be-4957-b9ac-b7a8767b5179">
 
-5. Reset the password if signining in for the first time
+5. Reset the password if signing in for the first time
 
 <img width="521" alt="5  Reset password if required" src="https://github.com/user-attachments/assets/3019205d-d683-4961-9e66-3dcb354ec4e2">
 
-6. Use the external user to login to Azure Databricks
+6. Use the external user to login to Azure Databricks Account console via https://accounts.azuredatabricks.net/
    
 <img width="800" alt="6  Signin to account console" src="https://github.com/user-attachments/assets/57c252e2-cec7-476f-9cbf-a000b40db77d">
 
@@ -81,7 +83,7 @@ Please follow the steps below to implement this solution
 
 <img width="1913" alt="8 4 Assign Global Admin Role" src="https://github.com/user-attachments/assets/a271a9a2-fb02-4ce2-bf6b-081f15a0e5e1">
 
-5. Sign in using the new user to Azure Databricks Account Console
+5. Sign in using the new user to Azure Databricks Account Console via https://accounts.azuredatabricks.net/
 
 <img width="1919" alt="9 1 Signin to Account Console" src="https://github.com/user-attachments/assets/8f63b9cd-805b-4164-86d6-ec483e437853">
 
@@ -90,8 +92,11 @@ Please follow the steps below to implement this solution
 # Related Content
 
 Databricks Community Forum - https://community.databricks.com/t5/administration-architecture/unable-to-login-to-azure-databricks-account-console/td-p/82190
+
 Microsft Q&A Forum - https://learn.microsoft.com/en-us/answers/questions/1861727/unable-to-login-to-azure-databricks-account-consol
+
 Stack Overflow Question - https://stackoverflow.com/questions/78843411/unable-to-login-to-azure-databricks-account-console/78893694#78893694
+
 
 
 
